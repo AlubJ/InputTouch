@@ -1,6 +1,6 @@
 if (InputMobileRotating())
 {
-    currentRot = InputMobileRotateAngle();
+    currentRot = InputTouchRotateAngle();
     image_angle = lastRot + currentRot;
 }
 
@@ -11,7 +11,7 @@ if (InputMobileRotateEnd())
     currentRot = 0;
 }
 
-if (InputMobileZooming())
+if (InputTouchZooming())
 {
     currentScale = InputMobileZoomScale() - 1;
     image_xscale = lastScale + currentScale;

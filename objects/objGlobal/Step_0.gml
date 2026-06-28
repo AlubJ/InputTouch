@@ -1,4 +1,4 @@
-if (InputMobileTap())
+if (InputTouchTap())
 {
     lastThing = "Single tap";
     InputMobileVibrate(10);
@@ -16,7 +16,7 @@ if (InputMobileLongTap())
 
 if (InputMouseReleased())
 {
-    if (InputMobileFlickDown())
+    if (InputTouchFlickDown())
     {
         lastThing = "Flick down";
     }
@@ -24,7 +24,7 @@ if (InputMouseReleased())
     {
         lastThing = "Flick up";
     }
-    if (InputMobileFlickLeft())
+    if (InputTouchFlickLeft())
     {
         lastThing = "Flick left";
     }

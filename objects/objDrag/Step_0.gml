@@ -12,9 +12,9 @@ if (InputMobileDragging() && localDragging)
     y = _py;
 }
 
-if (InputMobileFlick() && localDragging)
+if (InputTouchFlick() && localDragging)
 {
-    spd = InputMobileFlickSpeed() / 10;
+    spd = InputTouchFlickSpeed() / 10;
     dir = InputMobileFlickAngle();
 }
 

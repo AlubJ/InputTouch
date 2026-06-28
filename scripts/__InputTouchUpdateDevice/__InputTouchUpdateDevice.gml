@@ -93,6 +93,16 @@ function __InputTouchUpdateDevice(_deviceIndex)
                 }
             }
             
+            // Flick detection
+            // TODO: more work to make it consistently good
+            if (point_distance(0, 0, __deviceDeltaX, __deviceDeltaY) >= INPUT_TOUCH_MIN_FLICK_DISTANCE)
+            {
+                 __flick = true;
+                 __flickCardinalDirection = __InputTouchGetCardinalDirection(__deviceDeltaX, __deviceDeltaY);
+                 __flickSpeed = point_distance(0, 0, __deviceDeltaX, __deviceDeltaY);
+                 __flickAngle = point_direction(0, 0, __deviceDeltaX, __deviceDeltaY);
+            }
+            
             return;
         }
         

@@ -1,34 +1,34 @@
-if (InputMobileTap())
+if (InputTouchTap())
 {
     lastThing = "Single tap";
-    InputMobileVibrate(10);
+    InputTouchVibrate(10);
 }
-if (InputMobileDoubleTap())
+if (InputTouchDoubleTap())
 {
     lastThing = "Double tap";
-    InputMobileVibrate(30);
+    InputTouchVibrate(30);
 }
-if (InputMobileLongTap())
+if (InputTouchLongTap())
 {
     lastThing = "Long tap";
-    InputMobileVibrate(50);
+    InputTouchVibrate(50);
 }
 
 if (InputMouseReleased())
 {
-    if (InputMobileFlickDown())
+    if (InputTouchFlickDown())
     {
         lastThing = "Flick down";
     }
-    if (InputMobileFlickUp())
+    if (InputTouchFlickUp())
     {
         lastThing = "Flick up";
     }
-    if (InputMobileFlickLeft())
+    if (InputTouchFlickLeft())
     {
         lastThing = "Flick left";
     }
-    if (InputMobileFlickRight())
+    if (InputTouchFlickRight())
     {
         lastThing = "Flick right";
     }

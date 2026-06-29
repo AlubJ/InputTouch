@@ -1,24 +1,24 @@
-if (InputMobileRotating())
+if (InputTouchRotating())
 {
-    currentRot = InputMobileRotateAngle();
+    currentRot = InputTouchRotateAngle();
     image_angle = lastRot + currentRot;
 }
 
-if (InputMobileRotateEnd())
+if (InputTouchRotateEnd())
 {
     image_angle = lastRot + currentRot;
     lastRot = image_angle;
     currentRot = 0;
 }
 
-if (InputMobileZooming())
+if (InputTouchZooming())
 {
-    currentScale = InputMobileZoomScale() - 1;
+    currentScale = InputTouchZoomScale() - 1;
     image_xscale = lastScale + currentScale;
     image_yscale = image_xscale;
 }
 
-if (InputMobileZoomEnd())
+if (InputTouchZoomEnd())
 {
     image_xscale = lastScale + currentScale;
     image_yscale = image_xscale;

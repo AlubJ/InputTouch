@@ -1,0 +1,30 @@
+// Feather disable all
+
+// The maximum number of possible multi-touch devices that InputTouch will detect for
+// and can be increased or decreased to fit specific purposes. Default 8.
+#macro INPUT_TOUCH_MAX_MULTITOUCH_DEVICES 8
+
+// The maximum amount of time in milliseconds that a touch can be held down for it to
+// register as a tap and not a tap-and-hold. Default 200.
+#macro INPUT_TOUCH_MAX_TAP_TIME 200
+
+// The maximum amount of distance in pixels that a tap can be registered in, if the tap
+// exceeds this window then the tap will not be registered. Default 20.
+#macro INPUT_TOUCH_MAX_TAP_DISTANCE 20
+
+// The maximum time in milliseconds that a tap or double tap can be registered in.
+// If a double tap is not registered in this time window a single tap will be detected
+// instead. Default 200.
+#macro INPUT_TOUCH_MAX_DOUBLE_TAP_TIME 200
+
+// The maximum distance in pixels from the firt tap that a double tap will be registered.
+// This will tune the double tap to a general area. Default 100.
+#macro INPUT_TOUCH_MAX_DOUBLE_TAP_DISTANCE 100
+
+// The minimum amount of distance in pixels in pixles in one frame for a flick gesture to
+// be detected. Default 10.
+#macro INPUT_TOUCH_MIN_FLICK_DISTANCE 10
+
+// The minimum angle a rotate gesture needs to rotate from its starting place for a rotation
+// to be detected. Default 5.
+#macro INPUT_TOUCH_MIN_ROTATE_ANGLE 5

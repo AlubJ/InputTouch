@@ -20,10 +20,10 @@
 */
 
 const config = {
-	name: 'InputMobile',
-	description: 'Mobile Plug-In for Input.',
-	latestVersion: '1.0',
-	otherVersions: [],
+	name: 'InputTouch',
+	description: 'Touch based input plug-In for Input.',
+	latestVersion: '1.1',
+	otherVersions: [ '1.0' ],
 	favicon: 'assets/favicon.ico',
 	themeColor: '#f08686',
 };

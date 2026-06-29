@@ -151,6 +151,10 @@ function __InputTouchSystem()
         __zoomDevice0 = undefined;
         __zoomDevice1 = undefined;
         
+        __virtualKeyboardState = INPUT_TOUCH_VK_CLOSED;
+        __virtualKeyboardHeight = 0;
+        __virtualKeyboardString = "";
+        
         // Set the GameMaker flick speed to 0.5 inches so that a flick fires when a flick happens
         gesture_flick_speed(0.5);
         

@@ -1,7 +1,9 @@
-if (InputTouchTap())
+if (InputTouchTap() && !InputTouchKeyboardGetOpen())
 {
     lastThing = "Single tap";
     InputTouchVibrate(10);
+    
+    InputTouchKeyboardOpen();
 }
 if (InputTouchDoubleTap())
 {
@@ -32,4 +34,9 @@ if (InputMouseReleased())
     {
         lastThing = "Flick right";
     }
+}
+
+if (InputTouchTap() && point_in_rectangle(InputTouchDeviceX(), InputTouchDeviceY(), 0, 0, display_get_width(), display_get_height() - InputTouchKeyboardGetHeight()) && InputTouchKeyboardGetOpen())
+{
+    InputTouchKeyboardClose();
 }

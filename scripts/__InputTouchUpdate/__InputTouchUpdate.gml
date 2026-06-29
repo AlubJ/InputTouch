@@ -37,5 +37,10 @@ function __InputTouchUpdate()
         // Reset zooming
         __zoomStart = false;
         __zoomEnd = false;
+        
+        if (__virtualKeyboardState == INPUT_TOUCH_VK_OPENED)
+        {
+            __virtualKeyboardString = keyboard_string;
+        }
     }
 }

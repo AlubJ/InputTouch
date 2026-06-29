@@ -1,6 +1,6 @@
 // Feather disable all
 
-// The maximum number of possible multi-touch devices that InputMobile will detect for
+// The maximum number of possible multi-touch devices that InputTouch will detect for
 // and can be increased or decreased to fit specific purposes. Default 8.
 #macro INPUT_TOUCH_MAX_MULTITOUCH_DEVICES 8
 

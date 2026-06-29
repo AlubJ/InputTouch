@@ -1,12 +1,12 @@
-var _px = InputMobileRoomX();
-var _py = InputMobileRoomY();
+var _px = InputTouchRoomX();
+var _py = InputTouchRoomY();
 
-if (InputMobileDragStart() && point_in_rectangle(_px, _py, bbox_left, bbox_top, bbox_right, bbox_bottom))
+if (InputTouchDragStart() && point_in_rectangle(_px, _py, bbox_left, bbox_top, bbox_right, bbox_bottom))
 {
     localDragging = true;
 }
 
-if (InputMobileDragging() && localDragging)
+if (InputTouchDragging() && localDragging)
 {
     x = _px;
     y = _py;
@@ -15,7 +15,7 @@ if (InputMobileDragging() && localDragging)
 if (InputTouchFlick() && localDragging)
 {
     spd = InputTouchFlickSpeed() / 10;
-    dir = InputMobileFlickAngle();
+    dir = InputTouchFlickAngle();
 }
 
 if (spd > 0)
@@ -25,7 +25,7 @@ if (spd > 0)
     spd--;
 }
 
-if (InputMobileDragEnd())
+if (InputTouchDragEnd())
 {
     localDragging = false;
 }

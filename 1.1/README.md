@@ -31,7 +31,7 @@ InputTouch is a plug-in for [Input](https://codeberg.org/offalynne/Input) 10.3 w
 InputTouch supports Android, iOS and Nintendo Switch! The plug-in was designed for mobile in mind, but extends to Nintendo Switch thanks to the cross-platform nature of GameMaker.
 
 ### What version of Input and GameMaker does InputTouch support?
-InputTouch is built for GameMaker 2024.14 and Input 10.3.
+InputTouch is built for GameMaker LTS2026 and Input 10.3.
 
 [InputTouch is released under the MIT license](LICENSE). This means you can use it for whatever purpose you want, including commercial projects. It’d mean a lot if you dropped my name into the credits ("Alun Jones") and the authors of the Input (“Juju Adams, Alynne Keith, and Friends”) and/or say thanks, but you’re under no obligation to do so.
 

@@ -1,6 +1,6 @@
-<h1 align="center">InputMobile 1.0.0</h1>
+<h1 align="center">InputTouch 1.1.0</h1>
 
-<p align="center">Comprehensive mobile input plug-in for <a href="https://codeberg.org/offalynne/Input" target="_blank">Input</a> 10.3 by <a href="https://alub.dev/" target="_blank">Alun Jones</a>.</p>
+<p align="center">Comprehensive touch based input plug-in for <a href="https://codeberg.org/offalynne/Input" target="_blank">Input</a> 10.3+ by <a href="https://alub.dev/" target="_blank">Alun Jones</a>.</p>
 
 <!---------------------------------[ Buttons ]---------------------------------->
 
@@ -13,8 +13,8 @@
 <!---------------------------------------------------------------------------->
 
 [License]: License
-[Download]: https://github.com/AlubJ/InputMobile/release/latest
-[Documentation]: https://docs.alub.dev/InputMobile
+[Download]: https://github.com/AlubJ/InputTouch/release/latest
+[Documentation]: https://docs.alub.dev/InputTouch
 
 
 <!---------------------------------[ Badges ]---------------------------------->
@@ -27,4 +27,4 @@
 
 ---
 
-InputMobile is a plug-in for [Input](https://codeberg.org/offalynne/Input) 10.3 which handles mobile based inputs. Touch, multi-touch, gestures and device vibration (using YoYo Games' [MobileUtils](https://github.com/YoYoGames/GMEXT-MobileUtils) extension) are all supported. This is your one-stop Input plug-in for creating responsive and good feeling mobile games.
+InputTouch is a plug-in for [Input](https://codeberg.org/offalynne/Input) 10.3+ which handles touch based inputs. Touch, multi-touch, gestures and device vibration (using YoYo Games' [MobileUtils](https://github.com/YoYoGames/GMEXT-MobileUtils) extension) are all supported. This is your one-stop Input plug-in for creating responsive and good feeling mobile games.

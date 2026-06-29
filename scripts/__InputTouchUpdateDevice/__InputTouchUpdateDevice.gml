@@ -61,13 +61,6 @@ function __InputTouchUpdateDevice(_deviceIndex)
         {
             __lastTouchTime = __touchTime;
             
-            __deviceDeltaX = 0;
-            __deviceDeltaY = 0;
-            __guiDeltaX = 0;
-            __guiDeltaY = 0;
-            __roomDeltaX = 0;
-            __roomDeltaY = 0;
-            
             __longTapFired = false;
             __dragging = false;
             __draggingEnd = true;
@@ -102,6 +95,13 @@ function __InputTouchUpdateDevice(_deviceIndex)
                  __flickSpeed = point_distance(0, 0, __deviceDeltaX, __deviceDeltaY);
                  __flickAngle = point_direction(0, 0, __deviceDeltaX, __deviceDeltaY);
             }
+            
+            __deviceDeltaX = 0;
+            __deviceDeltaY = 0;
+            __guiDeltaX = 0;
+            __guiDeltaY = 0;
+            __roomDeltaX = 0;
+            __roomDeltaY = 0;
             
             return;
         }

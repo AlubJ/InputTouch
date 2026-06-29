@@ -35,8 +35,8 @@
   ],
   "name":"Room1",
   "parent":{
-    "name":"InputMobile",
-    "path":"InputMobile.yyp",
+    "name":"InputTouch",
+    "path":"InputTouch.yyp",
   },
   "parentRoom":null,
   "physicsSettings":{

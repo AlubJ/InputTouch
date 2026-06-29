@@ -44,10 +44,10 @@ function __InputTouchSystem()
         __steamDeck = true;
         if (/*INPUT_STEAMWORKS_SUPPORT &&*/ INPUT_ON_LINUX)
         {
-            if (steam_utils_is_steam_running_on_steam_deck()) {
+            /*if (steam_utils_is_steam_running_on_steam_deck()) {
                 __steamDeck == true;
                 __InputTrace("InputTouch for Steam Deck available.");
-            }
+            }*/
         }
         
         // Vibrate tracking

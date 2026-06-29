@@ -13,7 +13,7 @@
 <!---------------------------------------------------------------------------->
 
 [License]: License
-[Download]: https://github.com/AlubJ/InputTouch/release/latest
+[Download]: https://github.com/AlubJ/InputTouch/releases/latest
 [Documentation]: https://docs.alub.dev/InputTouch
 
 

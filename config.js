@@ -22,8 +22,8 @@
 const config = {
 	name: 'InputTouch',
 	description: 'Touch based input plug-In for Input.',
-	latestVersion: '1.1',
-	otherVersions: [ '1.0' ],
+	latestVersion: '1.2',
+	otherVersions: [ '1.1', '1.0' ],
 	favicon: 'assets/favicon.ico',
 	themeColor: '#f08686',
 };

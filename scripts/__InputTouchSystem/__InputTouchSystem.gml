@@ -41,6 +41,15 @@ function __InputTouchSystem()
             __InputTrace("MobileUtils extension unavailable");
         }
         
+        __steamDeck = true;
+        if (/*INPUT_STEAMWORKS_SUPPORT &&*/ INPUT_ON_LINUX)
+        {
+            if (steam_utils_is_steam_running_on_steam_deck()) {
+                __steamDeck == true;
+                __InputTrace("InputTouch for Steam Deck available.");
+            }
+        }
+        
         // Vibrate tracking
         __vibrationBeginTime = 0;
         __vibrationTime = 0;
@@ -164,7 +173,7 @@ function __InputTouchSystem()
         // Define plugin
         InputPlugInDefine("Alub.Mobile", "Alun Jones", INPUT_TOUCH_VERSION, INPUT_TOUCH_TARGET_VERISON, function ()
         {
-            if (INPUT_ON_MOBILE || INPUT_ON_SWITCH)
+            if (INPUT_ON_MOBILE || INPUT_ON_SWITCH || __steamDeck)
             {
                 InputPlugInRegisterCallback(INPUT_PLUG_IN_CALLBACK.COLLECT, undefined, function ()
                 {
@@ -173,7 +182,7 @@ function __InputTouchSystem()
             }
             else
             {
-                InputPlugInWarning("Current platform is not mobile or Nintendo Switch, mobile specific features will not be enabled. Please check platform before using InputTouch features.");
+                InputPlugInWarning("Current platform is not mobile, Nintendo Switch or Steam Deck, mobile specific features will not be enabled. Please check platform before using InputTouch features.");
             }
         });
         

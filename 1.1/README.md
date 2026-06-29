@@ -1,4 +1,4 @@
-<h1 align="center">InputTouch 1.0.0</h1>
+<h1 align="center">InputTouch 1.1.0</h1>
 
 <p align="center">Comprehensive touch based input plug-in for <a href="https://codeberg.org/offalynne/Input" target="_blank">Input</a> 10.3 by <a href="https://alub.dev/" target="_blank">Alun Jones</a>.</p>
 
